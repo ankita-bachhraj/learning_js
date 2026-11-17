@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script>
+
+var setclear; 
+  function mydata(){
+document.getElementById("demo").innerHTML="heppy";
+
+ }       
+ function display(){
+setclear=setTimeout(mydata,5000);
+
+ }
+  function mystop(){
+clearTimeout(setclear);
+
+ }
+ 
+
+
+    </script>
+</head>
+<body>
+    <button onclick="display()">click me.!</button>
+     <button onclick="mystop()">stop me.!</button>
+    <p id="demo">wellcome....!</p>
+    
+</body>
+</html>
