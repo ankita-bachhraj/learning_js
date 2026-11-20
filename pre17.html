@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script>
+        function display(){
+       setInterval(mydata,1000);
+        }
+        function mydata(){
+        document.getElementById("demo").innerHTML+="welcom to miracle";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="display()">
+        clickme...!
+    </button>
+    <button onclick="display1()">
+        stop me...!
+    </button>
+    <h1 id="demo">hello i am here...!</h1>
+</body>
+</html>
