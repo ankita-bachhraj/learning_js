@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script>
+        function dataSet(){
+            localStorage.setItem("name","anku");
+        }
+         function dataGet(){
+            localStorage.setItem("name","anku");
+            document.getElementById("demo").innerHTML=mynm;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="dataSet()">set daata</button>
+    <button onclick="dataGet()"> set data</button>
+    <h1 class="demo">hello</h1>
+</body>
+</html>
