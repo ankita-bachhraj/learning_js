@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script>
+        function display(){
+            const student=[
+                {
+                    "age":20,
+                   "name":"ankita braj",
+                   "city":"bhopal"
+                },
+                  {
+                    "age":21,
+                   "name":"anku braj",
+                   "city":"khategoan"
+                },
+                  {
+                    "age":22,
+                   "name":"amnnu braj",
+                   "city":"burada"
+                },
+                        {
+                    "age":23,
+                   "name":"anu braj",
+                   "city":"harda"
+                },
+                        {
+                    "age":24,
+                   "name":"annu braj",
+                   "city":"burada"
+                },
+            ]
+            var MyTab=`
+            <table style="border:2px,solid,black;background-color:yellow;width:400px;height:400px;align:center;">
+                <tr style="border:2px,solid,black;background-color:red;color:white">
+                <th>AGE</th>
+                <th>NAME</th>
+                <th>CITY</th></tr>
+              `
+            student.map(function(myval){
+                MyTab+=`
+                <tr>
+                    <td>${myval.age}</td>
+                     <td>${myval.name}</td>
+                      <td>${myval.city}</td>
+                    </tr>`
+            })
+            MyTab+="</table>";
+            document.getElementById("demo").innerHTML=MyTab;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="display()">click here</button>
+    <p id="demo">welcome</p>
+</body>
+</html>
