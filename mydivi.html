@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script>
+        function display(){
+
+        try{
+            var a=prompt("enter no 1:");
+            var b=prompt("enter no 2:");
+            if(b==0){
+              throw "you can not";
+        
+            }
+            var c=a/b;
+            document.getElementById("demo").innerHTML="addition:"+c;
+        }
+        catch (e){
+             document.getElementById("demo").innerHTML=e;
+        }
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body><button onclick="display()">click here</button>
+    <h1 id="demo"></h1>
+    
+</body>
+</html>
