@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script>
+function display(){
+    const age=[12,13,14,15,15,15,153,5,35,6,6,77,8,9];
+    const ans=age.filter((val)=>{
+        if (val%2==0){
+            return true;
+        }
+    })
+
+
+document.getElementById("demo").innerHTML=`array value:${age}
+                                             <br>
+                                             even value:${ans}`;
+
+}
+
+
+
+
+    </script>
+</head>
+<body><button onclick="display()">click here</button>
+    
+</body>
+</html>
